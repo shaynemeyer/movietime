@@ -161,6 +161,7 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EWw-W7-6ZA">
                                 <rect key="frame" x="250" y="224" width="100" height="150"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="7jY-6H-mZZ"/>
                                     <constraint firstAttribute="width" constant="100" id="QtF-Ep-icn"/>
@@ -168,12 +169,8 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cpk-Mj-6fP">
                                 <rect key="frame" x="250" y="224" width="100" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="SDL-jT-i2O"/>
-                                    <constraint firstAttribute="width" constant="100" id="nWi-KY-Tt6"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                <state key="normal" title="Add Cover">
+                                <state key="normal" title="ADD COVER">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -214,28 +211,29 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="EWw-W7-6ZA" firstAttribute="centerX" secondItem="ZzE-0V-Tqe" secondAttribute="centerX" id="1C3-OX-C0K"/>
                             <constraint firstItem="3d6-PP-hfH" firstAttribute="leading" secondItem="ZzE-0V-Tqe" secondAttribute="leadingMargin" id="1Qy-Eg-qEV"/>
-                            <constraint firstItem="EWw-W7-6ZA" firstAttribute="top" secondItem="EVL-JD-jbE" secondAttribute="bottom" constant="8" id="1tm-CI-9bF"/>
                             <constraint firstItem="qSN-Zh-KBE" firstAttribute="leading" secondItem="ZzE-0V-Tqe" secondAttribute="leadingMargin" id="23E-LQ-lj9"/>
-                            <constraint firstItem="EWw-W7-6ZA" firstAttribute="centerX" secondItem="ZzE-0V-Tqe" secondAttribute="centerX" id="41x-Fg-zzs"/>
                             <constraint firstItem="qSN-Zh-KBE" firstAttribute="top" secondItem="3d6-PP-hfH" secondAttribute="bottom" constant="8" id="4gp-Wh-1eT"/>
                             <constraint firstItem="qSN-Zh-KBE" firstAttribute="centerX" secondItem="ZzE-0V-Tqe" secondAttribute="centerX" id="7G8-AF-Mas"/>
-                            <constraint firstItem="Cpk-Mj-6fP" firstAttribute="centerX" secondItem="ZzE-0V-Tqe" secondAttribute="centerX" id="7zU-pB-RKx"/>
                             <constraint firstItem="EVL-JD-jbE" firstAttribute="top" secondItem="boE-sa-mpV" secondAttribute="bottom" constant="8" id="BkA-u1-2l7"/>
+                            <constraint firstItem="Cpk-Mj-6fP" firstAttribute="width" secondItem="EWw-W7-6ZA" secondAttribute="width" id="Es0-Gf-oMh"/>
                             <constraint firstItem="boE-sa-mpV" firstAttribute="top" secondItem="qSN-Zh-KBE" secondAttribute="bottom" constant="8" id="Fe5-6T-NN3"/>
-                            <constraint firstItem="Cpk-Mj-6fP" firstAttribute="leading" secondItem="ZzE-0V-Tqe" secondAttribute="leading" constant="250" id="JoI-Kj-lOq"/>
+                            <constraint firstItem="Cpk-Mj-6fP" firstAttribute="centerX" secondItem="ZzE-0V-Tqe" secondAttribute="centerX" id="GqW-jh-1e1"/>
                             <constraint firstItem="boE-sa-mpV" firstAttribute="trailing" secondItem="ZzE-0V-Tqe" secondAttribute="trailingMargin" id="NlV-w4-3YM"/>
                             <constraint firstItem="3d6-PP-hfH" firstAttribute="trailing" secondItem="ZzE-0V-Tqe" secondAttribute="trailingMargin" id="RS4-MR-EXs"/>
+                            <constraint firstItem="e1A-8B-frB" firstAttribute="centerX" secondItem="ZzE-0V-Tqe" secondAttribute="centerX" id="SFG-9Z-st3"/>
                             <constraint firstItem="3d6-PP-hfH" firstAttribute="centerX" secondItem="ZzE-0V-Tqe" secondAttribute="centerX" id="YnH-g3-U86"/>
                             <constraint firstItem="qSN-Zh-KBE" firstAttribute="trailing" secondItem="ZzE-0V-Tqe" secondAttribute="trailingMargin" id="bHR-Wg-C9T"/>
                             <constraint firstItem="EVL-JD-jbE" firstAttribute="centerX" secondItem="ZzE-0V-Tqe" secondAttribute="centerX" id="dxY-V0-DrX"/>
+                            <constraint firstItem="e1A-8B-frB" firstAttribute="top" secondItem="Cpk-Mj-6fP" secondAttribute="bottom" constant="25" id="gTh-S8-OWk"/>
+                            <constraint firstItem="Cpk-Mj-6fP" firstAttribute="height" secondItem="EWw-W7-6ZA" secondAttribute="height" id="hIu-Wa-vVy"/>
                             <constraint firstItem="3d6-PP-hfH" firstAttribute="top" secondItem="ja1-my-zaG" secondAttribute="bottom" constant="8" id="hXc-Ab-JPx"/>
-                            <constraint firstItem="e1A-8B-frB" firstAttribute="top" secondItem="Cpk-Mj-6fP" secondAttribute="bottom" constant="25" id="jrd-lU-fqW"/>
-                            <constraint firstAttribute="trailing" secondItem="Cpk-Mj-6fP" secondAttribute="trailing" constant="250" id="kNs-tX-qax"/>
-                            <constraint firstItem="Cpk-Mj-6fP" firstAttribute="top" secondItem="EVL-JD-jbE" secondAttribute="bottom" constant="8" id="nC2-sK-Igg"/>
+                            <constraint firstItem="Cpk-Mj-6fP" firstAttribute="centerY" secondItem="EWw-W7-6ZA" secondAttribute="centerY" id="jyP-KU-7Sa"/>
+                            <constraint firstItem="EWw-W7-6ZA" firstAttribute="top" secondItem="EVL-JD-jbE" secondAttribute="bottom" constant="8" id="ths-Gz-vMf"/>
+                            <constraint firstItem="Cpk-Mj-6fP" firstAttribute="centerX" secondItem="EWw-W7-6ZA" secondAttribute="centerX" id="wCd-Dp-jTI"/>
                             <constraint firstItem="boE-sa-mpV" firstAttribute="leading" secondItem="ZzE-0V-Tqe" secondAttribute="leadingMargin" id="xLi-OJ-AON"/>
                             <constraint firstItem="EVL-JD-jbE" firstAttribute="trailing" secondItem="ZzE-0V-Tqe" secondAttribute="trailingMargin" id="xaK-f2-ncj"/>
-                            <constraint firstItem="e1A-8B-frB" firstAttribute="centerX" secondItem="ZzE-0V-Tqe" secondAttribute="centerX" id="ym3-Au-qZd"/>
                             <constraint firstItem="EVL-JD-jbE" firstAttribute="leading" secondItem="ZzE-0V-Tqe" secondAttribute="leadingMargin" id="yyb-Cb-EFT"/>
                         </constraints>
                     </view>
@@ -247,12 +245,16 @@
                                 <state key="normal" title="Back">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="backBtnPressed:" destination="Jxn-lb-JP6" eventType="touchUpInside" id="sYq-OM-l3Q"/>
+                                </connections>
                             </button>
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="movieDesc" destination="qSN-Zh-KBE" id="I1U-eI-VuW"/>
+                        <outlet property="movieImg" destination="EWw-W7-6ZA" id="5ed-Cs-P7j"/>
                         <outlet property="moviePlot" destination="EVL-JD-jbE" id="wEO-6Z-Hsn"/>
                         <outlet property="movieTitle" destination="3d6-PP-hfH" id="gWj-Gz-4Cj"/>
                         <outlet property="movieURL" destination="boE-sa-mpV" id="9Im-5M-6VW"/>
@@ -343,9 +345,19 @@
                                 <state key="normal" title="Back">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="backBtnPressed:" destination="n2U-j4-8ka" eventType="touchUpInside" id="Fi9-xY-2wI"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="movieDesc" destination="NHC-GM-sxN" id="Tel-IT-ElU"/>
+                        <outlet property="movieImg" destination="pR1-WS-iHV" id="18H-yu-AZd"/>
+                        <outlet property="moviePlot" destination="d8a-mt-Tew" id="VOH-De-cn5"/>
+                        <outlet property="movieTitle" destination="dv3-Nz-Ihm" id="DxV-px-JsG"/>
+                        <outlet property="movieURL" destination="Koy-cr-cvo" id="wOu-oA-dgs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DH3-OW-DpW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
