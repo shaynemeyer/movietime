@@ -16,6 +16,8 @@
 		26CBFFB71C32C9A00068BF93 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CBFFB61C32C9A00068BF93 /* MovieCell.swift */; };
 		26CBFFBA1C32CB370068BF93 /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CBFFB81C32CB370068BF93 /* Movie+CoreDataProperties.swift */; };
 		26CBFFBB1C32CB370068BF93 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CBFFB91C32CB370068BF93 /* Movie.swift */; };
+		26CBFFBD1C32DF3E0068BF93 /* MovieDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CBFFBC1C32DF3E0068BF93 /* MovieDetailVC.swift */; };
+		26CBFFBF1C32DF720068BF93 /* AddMovieVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CBFFBE1C32DF720068BF93 /* AddMovieVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		26CBFFB61C32C9A00068BF93 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		26CBFFB81C32CB370068BF93 /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Movie+CoreDataProperties.swift"; path = "../Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		26CBFFB91C32CB370068BF93 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Movie.swift; path = ../Movie.swift; sourceTree = "<group>"; };
+		26CBFFBC1C32DF3E0068BF93 /* MovieDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailVC.swift; sourceTree = "<group>"; };
+		26CBFFBE1C32DF720068BF93 /* AddMovieVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMovieVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				26CBFFA01C32C7DC0068BF93 /* ViewController.swift */,
+				26CBFFBC1C32DF3E0068BF93 /* MovieDetailVC.swift */,
+				26CBFFBE1C32DF720068BF93 /* AddMovieVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -171,10 +177,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26CBFFBD1C32DF3E0068BF93 /* MovieDetailVC.swift in Sources */,
 				26CBFFA11C32C7DC0068BF93 /* ViewController.swift in Sources */,
 				26CBFFBA1C32CB370068BF93 /* Movie+CoreDataProperties.swift in Sources */,
 				26CBFFBB1C32CB370068BF93 /* Movie.swift in Sources */,
 				26CBFF9F1C32C7DC0068BF93 /* AppDelegate.swift in Sources */,
+				26CBFFBF1C32DF720068BF93 /* AddMovieVC.swift in Sources */,
 				26CBFFB71C32C9A00068BF93 /* MovieCell.swift in Sources */,
 				26CBFFA71C32C7DC0068BF93 /* MovieTime.xcdatamodeld in Sources */,
 			);
