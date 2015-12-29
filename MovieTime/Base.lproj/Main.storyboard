@@ -9,7 +9,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MovieTime" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="MovieTime" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -22,8 +22,8 @@
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="150" id="dbm-v1-ESg" customClass="MovieCell" customModule="MovieTime" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="92" width="600" height="150"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" id="dbm-v1-ESg" customClass="MovieCell" customModule="MovieTime" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dbm-v1-ESg" id="BZa-gq-199">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="149"/>
@@ -48,8 +48,8 @@
                                                         </mask>
                                                     </variation>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="After being held captive in an Afghan cave, an industrialist creates a unique weaponized suit of armor to fight evil." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6pR-xZ-IMD">
-                                                    <rect key="frame" x="96" y="33" width="496" height="50"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="After being held captive in an Afghan cave, an industrialist creates a unique weaponized suit of armor to fight evil." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6pR-xZ-IMD">
+                                                    <rect key="frame" x="96" y="39" width="496" height="50"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="50" id="aYy-QG-kZi"/>
                                                     </constraints>
@@ -107,6 +107,7 @@
                                                     <exclude reference="tzb-x8-Ezb"/>
                                                     <exclude reference="CgK-5c-kY4"/>
                                                     <exclude reference="Q4C-qQ-xhw"/>
+                                                    <exclude reference="0KQ-bf-RdD"/>
                                                     <exclude reference="yxY-qz-fIy"/>
                                                     <exclude reference="GqZ-Za-dOh"/>
                                                 </mask>
@@ -126,10 +127,22 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WUX-wh-UXJ" secondAttribute="bottom" id="0cT-Ia-1nY"/>
+                            <constraint firstItem="WUX-wh-UXJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9R5-5a-NpM"/>
+                            <constraint firstItem="WUX-wh-UXJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="HFt-sg-ulZ"/>
                             <constraint firstAttribute="trailing" secondItem="WUX-wh-UXJ" secondAttribute="trailing" id="huh-3X-HXS"/>
+                            <constraint firstAttribute="trailing" secondItem="WUX-wh-UXJ" secondAttribute="trailing" id="iEy-Fo-BUu"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WUX-wh-UXJ" secondAttribute="bottom" id="iwg-da-TeS"/>
                             <constraint firstItem="WUX-wh-UXJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="qO7-SM-QrC"/>
                             <constraint firstItem="WUX-wh-UXJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wR2-ag-vZt"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="huh-3X-HXS"/>
+                                <exclude reference="qO7-SM-QrC"/>
+                                <exclude reference="wR2-ag-vZt"/>
+                                <exclude reference="0cT-Ia-1nY"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="vvI-eq-k8d">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="VFf-1b-Bbk">
@@ -283,8 +296,8 @@
                                     <constraint firstAttribute="width" constant="133" id="I01-9E-RTM"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Iron Man" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dv3-Nz-Ihm">
-                                <rect key="frame" x="161" y="72" width="390" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Iron Man" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dv3-Nz-Ihm">
+                                <rect key="frame" x="161" y="72" width="119" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="L3S-te-yRf"/>
                                 </constraints>
@@ -310,8 +323,8 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="d8a-mt-Tew">
-                                <rect key="frame" x="161" y="203" width="419" height="305"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="d8a-mt-Tew">
+                                <rect key="frame" x="161" y="203" width="419" height="321"/>
                                 <mutableString key="text">Tony Stark. Genius, billionaire, playboy, philanthropist. Son of legendary inventor and weapons contractor Howard Stark. When Tony Stark is assigned to give a weapons presentation to an Iraqi unit led by Lt. Col. James Rhodes, he's given a ride on enemy lines. That ride ends badly when Stark's Humvee that he's riding in is attacked by enemy combatants. He survives - barely - with a chest full of shrapnel and a car battery attached to his heart. In order to survive he comes up with a way to miniaturize the battery and figures out that the battery can power something else. Thus Iron Man is born. He uses the primitive device to escape from the cave in Iraq. Once back home, he then begins work on perfecting the Iron Man suit. But the man who was put in charge of Stark Industries has plans of his own to take over Tony's technology for other matters.</mutableString>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>

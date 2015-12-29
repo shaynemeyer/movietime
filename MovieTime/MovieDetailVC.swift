@@ -27,6 +27,9 @@ class MovieDetailVC: UIViewController {
             movieDesc.text = selectedMovie.desc
             movieURL.text = selectedMovie.imdb
             moviePlot.text = selectedMovie.plot
+            
+            movieImg.layer.cornerRadius = 4.0
+            movieImg.clipsToBounds = true
         }
         
     }

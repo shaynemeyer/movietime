@@ -25,6 +25,9 @@ class MovieCell: UITableViewCell {
         movieTitle.text = movie.title
         movieDesc.text = movie.desc
         movieImdb.text = movie.imdb
+        
+        movieImg.layer.cornerRadius = 4.0
+        movieImg.clipsToBounds = true
     }
 
 }
