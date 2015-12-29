@@ -117,7 +117,7 @@
                                             <outlet property="movieImdb" destination="0OJ-ED-vfb" id="0cp-Q2-0cK"/>
                                             <outlet property="movieImg" destination="7GS-1l-TfE" id="qal-0X-6co"/>
                                             <outlet property="movieTitle" destination="4SK-CB-sjB" id="LwH-sj-AIP"/>
-                                            <segue destination="n2U-j4-8ka" kind="show" id="QJo-fT-y3o"/>
+                                            <segue destination="n2U-j4-8ka" kind="show" identifier="MovieDetail" id="QJo-fT-y3o"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

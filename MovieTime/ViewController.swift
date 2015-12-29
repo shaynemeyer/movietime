@@ -56,5 +56,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return movies.count
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "MovieDetail" {
+            if let cell = sender as? MovieCell {
+                if let detailsVC = segue.destinationViewController as? MovieDetailVC {
+                    if let movieIndex = tableView.indexPathForCell(cell)?.row {
+                       detailsVC.movies = movies[movieIndex]
+                    }
+                }
+            }
+        }
+    }
 }
 
